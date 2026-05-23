@@ -1,151 +1,262 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caio Luan - Desenvolvedor Front-End. Portfólio de projetos, habilidades e contato profissional.">
+    <meta name="keywords" content="Caio Luan, Desenvolvedor Front-End, Web Developer, HTML, CSS, JavaScript, Portfólio">
+    <meta name="author" content="Caio Luan">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Caio Luan | Portfólio Front-End">
+    <meta property="og:description" content="Explore o portfólio de Caio Luan. Projetos interativos, habilidades e contato.">
+    <meta property="og:image" content="img/CAIOLUAN2.0.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link  rel=" icon" type="favicon_io/android-chrome-192x192.png" href="/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon_io/favicon.ico">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/resp.css">
+    
+    <!-- Particles CDN -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <title>My Portifolio</title>
+    
+    <title>Caio Luan | Desenvolvedor Front-End</title>
 </head>
 <body>
-  <div id="particles-js"></div>
-        <nav>
+    <!-- Partículas flutuantes de fundo -->
+    <div id="particles-js"></div>
+
+    <!-- Barra de Navegação Superior -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>&lt;</span>CaioLuan<span>.dev /&gt;</span>
+            </a>
             
-            <ul class="topo">
-                <li><a href="#About-me">About-me</a></li>
-                <li><a href="#projetos">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-              </ul>
-        </nav>
+            <ul class="topo" id="nav-links">
+                <li><a href="#About-me">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formulario">Contato</a></li>
+                <li>
+                    <button class="theme-btn" id="theme-toggle" aria-label="Alternar Tema">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <main>
-
-            <img src="img/CAIOLUAN2.0.jpg" alt="foto de perfil" class="foto-principal">
-
-          
-            <div class="conteudo">
-
-                <h1 class="titulor">Olá! Eu sou <span class="destaque">Caio Luan</span></h1>
-<p class="subtitulo">Desenvolvedor Front-End apaixonado por transformar ideias em interfaces incríveis.</p>
+    <!-- Apresentação Principal (Hero Section) -->
+    <main class="hero">
+        <div class="hero-grid">
+            <div class="hero-left">
+                <span class="tag">Disponível para Projetos</span>
+                <h1 class="titulor">Olá! Eu sou <br><span class="destaque">Caio Luan</span></h1>
+                
+                <!-- Bloco de digitação animado -->
+                <div class="typewrite-container">
+                    <span class="typewrite" id="typing-text">Desenvolvedor Front-End</span>
+                </div>
+                
+                <p class="subtitulo">Desenvolvedor Front-End apaixonado por transformar ideias complexas em interfaces web interativas, limpas e visualmente deslumbrantes.</p>
+                
+                <div class="cta-group">
+                    <a href="#formulario" class="botao1" id="btn-contato">
+                        Contato <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="../CV-PDF/CV-CaioLuan.pdf" download class="botao1 botao1-alt" id="btn-cv">
+                        Baixar CV <i class="fas fa-download"></i>
+                    </a>
+                </div>
             </div>
+            
+            <div class="hero-right">
+                <div class="avatar-wrapper">
+                    <!-- Anel luminoso giratório em gradiente -->
+                    <div class="avatar-ring"></div>
+                    <img src="img/CAIOLUAN2.0.jpg" alt="Foto de perfil de Caio Luan" class="foto-principal">
+                </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <section>
+    <!-- Seção Sobre Mim -->
+    <section id="About-me">
+        <div class="section-header">
+            <h2>Sobre <span class="destaque">mim</span></h2>
+            <p>Conheça a história e os valores por trás do meu código</p>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-text">
+                <p>Sou desenvolvedor iniciante com foco em tecnologia e criação de interfaces web modernas e performáticas.</p>
+                <p>Atualmente estou me aprofundando nos pilares essenciais do front-end: HTML5 semântico, CSS3 flexível e JavaScript moderno. Minhas rotinas diárias são dedicadas a construir projetos práticos que refinam minhas competências técnicas e analíticas.</p>
+                <p>Gosto de desenhar e programar layouts funcionais que priorizam a usabilidade, sempre buscando aprender novas tecnologias e melhorar constantemente. Meu objetivo é crescer profissionalmente como programador front-end e agregar valor real a equipes inovadoras.</p>
+            </div>
             
-            <!-- HTML -->
-<button class="botao1">Contato-me</button>
-<a href="../CV-PDF/CV-CaioLuan.pdf" download class="botao1">Baixar CV</a>
-        </section>
+            <!-- Grid de informações rápidas adicionais -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localização</h3>
+                    <p>Rio de Janeiro, RJ</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Disponibilidade</h3>
+                    <p>CLT / Freelancer</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Foco</h3>
+                    <p>Front-End & UI/UX</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Idiomas</h3>
+                    <p>Português (Nativo)</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section" id="About-me">
-            <h2 class="sobre">About <span class="sobre2">me</span></h2>
-            
-            <p class="sobre1">
-              Sou desenvolvedor iniciante apaixonado por tecnologia e criação de interfaces web.
-
-Atualmente estou estudando HTML, CSS e JavaScript, com foco no desenvolvimento de projetos práticos para evoluir minhas habilidades em front-end.
-
-Gosto de transformar ideias em interfaces funcionais, aprender novas tecnologias e melhorar constantemente através da prática.
-
-Meu objetivo é crescer como desenvolvedor front-end e construir uma carreira sólida na área de tecnologia, compartilhando minha evolução no GitHub e LinkedIn.
-            </p>
-          </section>
-
-          <section id="skills">
-            <h2 class="titulo">Minhas <span class="destaque">Skills</span></h2>
-          
-            <div class="skills-container">
-              <div class="skill-card">
+    <!-- Seção de Habilidades (Skills) -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>Minhas <span class="destaque">Skills</span></h2>
+            <p>As ferramentas e tecnologias que utilizo no meu ecossistema de desenvolvimento</p>
+        </div>
+      
+        <div class="skills-container">
+            <div class="skill-card html">
                 <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Estrutura o conteúdo das páginas da web com tags e elementos semânticos.</p>
-              </div>
-          
-              <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Estruturação de páginas com semântica rica, focada em SEO e acessibilidade.</p>
+            </div>
+      
+            <div class="skill-card css">
                 <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Responsável pelo visual e estilo do site, como cores, layout e animações.</p>
-              </div>
-          
-              <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Estilização elegante, layouts responsivos (Flexbox/Grid), variáveis e animações fluidas.</p>
+            </div>
+      
+            <div class="skill-card js">
                 <i class="fab fa-js-square"></i>
                 <h3>JavaScript</h3>
-                <p>Torna o site interativo e dinâmico, controlando comportamentos e eventos.</p>
-              </div>
-          
-              <div class="skill-card">
+                <p>Manipulação de DOM, requisições assíncronas (APIs) e interatividade complexa.</p>
+            </div>
+      
+            <div class="skill-card git">
                 <i class="fab fa-git-alt"></i>
                 <h3>Git</h3>
-                <p>Sistema de controle de versões para salvar e organizar o histórico dos códigos.</p>
-              </div>
-          
-              <div class="skill-card">
+                <p>Controle de versão robusto e gerenciamento seguro do histórico de código.</p>
+            </div>
+      
+            <div class="skill-card github">
                 <i class="fab fa-github"></i>
                 <h3>GitHub</h3>
-                <p>Plataforma para armazenar e compartilhar projetos com o Git na nuvem.</p>
-              </div>
+                <p>Colaboração, compartilhamento e deploy contínuo de projetos na nuvem.</p>
             </div>
-          </section>
-        
-         
-          
-      <section id="projetos">
-  <h2 class="titulo">Meus Projetos</h2>
-
-  <div id="projetos-api" class="projetos-grid"></div>
-
-</section>
-
-</section>
-
-
-          </section>
-          
-
-
-        <footer>
-            
-  <div class="contato-container" id="formulario">
-    <h2>Fale Comigo</h2>
-    <form action="#" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-
-      <button class="Enviar" type="submit">Enviar</button>
-    </form>
-  </div>
-
-
-  <p>© 2025 - Meu Portfólio | Todos os direitos reservados</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/p/C6Pz-_Mrm_O/?igsh=MXd5Mm44dnE5eXV2aw==" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="http://wa.me/5521970088704" target="_blank" title="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/desenvolvendofrontcaioluan444?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Takakae09" target="_blank" title="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-        </footer>
-
-       
-        <script src="index.js"></script>
+        </div>
+    </section>
     
+    <!-- Seção de Projetos -->
+    <section id="projetos">
+        <div class="section-header">
+            <h2>Meus <span class="destaque">Projetos</span></h2>
+            <p>Repositórios dinâmicos carregados diretamente do meu GitHub</p>
+        </div>
+
+        <!-- Skeleton loading placeholder que será substituído no carregamento da API -->
+        <div id="projetos-api" class="projetos-grid">
+            <div class="projeto-card skeleton">
+                <div style="display:flex; justify-content:space-between; margin-bottom: 20px;">
+                    <div class="skeleton-text" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                    <div class="skeleton-text" style="width: 80px;"></div>
+                </div>
+                <div class="skeleton-title"></div>
+                <div class="skeleton-text" style="width: 100%;"></div>
+                <div class="skeleton-text" style="width: 90%;"></div>
+                <div class="skeleton-text" style="width: 40%; margin-top:20px;"></div>
+            </div>
+            <div class="projeto-card skeleton">
+                <div style="display:flex; justify-content:space-between; margin-bottom: 20px;">
+                    <div class="skeleton-text" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                    <div class="skeleton-text" style="width: 80px;"></div>
+                </div>
+                <div class="skeleton-title"></div>
+                <div class="skeleton-text" style="width: 100%;"></div>
+                <div class="skeleton-text" style="width: 90%;"></div>
+                <div class="skeleton-text" style="width: 40%; margin-top:20px;"></div>
+            </div>
+            <div class="projeto-card skeleton">
+                <div style="display:flex; justify-content:space-between; margin-bottom: 20px;">
+                    <div class="skeleton-text" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                    <div class="skeleton-text" style="width: 80px;"></div>
+                </div>
+                <div class="skeleton-title"></div>
+                <div class="skeleton-text" style="width: 100%;"></div>
+                <div class="skeleton-text" style="width: 90%;"></div>
+                <div class="skeleton-text" style="width: 40%; margin-top:20px;"></div>
+            </div>
+        </div>
+    </section>
+      
+    <!-- Rodapé & Formulário de Contato -->
+    <footer>
+        <div class="contato-container" id="formulario">
+            <h2>Fale Comigo</h2>
+            <p>Tem alguma proposta, ideia ou feedback? Mande uma mensagem!</p>
+            <form action="#" method="post" id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail Comercial</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Como posso ajudar você?" required></textarea>
+                </div>
+
+                <button class="Enviar" type="submit" id="btn-enviar">
+                    Enviar Mensagem <i class="fab fa-whatsapp"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© 2026 - Caio Luan | Todos os direitos reservados</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/p/C6Pz-_Mrm_O/?igsh=MXd5Mm44dnE5eXV2aw==" target="_blank" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://wa.me/5521970088704" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/desenvolvendofrontcaioluan444?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/caioluanmatos" target="_blank" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="index.js"></script>
 </body>
 </html>
