@@ -516,6 +516,8 @@ section {
 .skill-card.html:hover::before { background: #e34c26; }
 .skill-card.css:hover::before { background: #264de4; }
 .skill-card.js:hover::before { background: #f0db4f; }
+.skill-card.node:hover::before { background: #339933; }
+.skill-card.react:hover::before { background: #61dafb; }
 .skill-card.git:hover::before { background: #f05032; }
 .skill-card.github:hover::before { background: #ffffff; }
 
@@ -524,6 +526,8 @@ body.light-mode .skill-card.github:hover::before { background: #000000; }
 .skill-card.html:hover i { color: #e34c26; filter: drop-shadow(0 0 10px rgba(227, 76, 38, 0.4)); }
 .skill-card.css:hover i { color: #264de4; filter: drop-shadow(0 0 10px rgba(38, 77, 228, 0.4)); }
 .skill-card.js:hover i { color: #f0db4f; filter: drop-shadow(0 0 10px rgba(240, 219, 79, 0.4)); }
+.skill-card.node:hover i { color: #339933; filter: drop-shadow(0 0 10px rgba(51, 153, 51, 0.4)); }
+.skill-card.react:hover i { color: #61dafb; filter: drop-shadow(0 0 10px rgba(97, 218, 251, 0.4)); }
 .skill-card.git:hover i { color: #f05032; filter: drop-shadow(0 0 10px rgba(240, 80, 50, 0.4)); }
 .skill-card.github:hover i { color: #ffffff; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); }
 
