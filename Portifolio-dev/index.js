@@ -179,10 +179,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!emailPattern.test(email)) {
         alert("⚠️ Por favor, digite um e-mail comercial válido.");
         return;
-      }
+0      }
 
       // WhatsApp Formatting & Number
-      const numero = "5521970088704"; // Caio Luan's official number
+      const numero = "5521971088704"; // Caio Luan's official number
       const saudacao = "🚀 *NOVO CONTATO DO PORTFÓLIO* 🚀\n\n";
       const corpo = `👤 *Nome:* ${nome}\n✉️ *E-mail:* ${email}\n\n💬 *Mensagem:*\n${mensagem}`;
       
