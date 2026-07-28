@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
      2. Typing Effect (Hero Section)
      ========================================== */
   const words = [
-    "Desenvolvedor Front-End",
+    "Desenvolvedor Full Stack",  
     "UI/UX Enthusiast",
     "Criador de Interfaces",
     "Apaixonado por Tecnologia"
