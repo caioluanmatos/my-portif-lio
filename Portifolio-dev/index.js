@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!emailPattern.test(email)) {
         alert("⚠️ Por favor, digite um e-mail comercial válido.");
         return;
-0      }
+      }
 
       // WhatsApp Formatting & Number
       const numero = "5521971088704"; // Caio Luan's official number
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
       card.className = "projeto-card";
 
       // Trunca descrições excessivamente longas
-      const desc = repo.description || "Sem descrição disponível. Projeto desenvolvido com muito foco e melhores práticas de Front-End.";
+      const desc = repo.description || "Sem descrição disponível. Projeto desenvolvido com muito foco e melhores práticas de Full Stack.";
 
       // Links condicionais para ver demo
       const homepageLink = repo.homepage 
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>${desc}</p>
         </div>
         <div class="projeto-footer">
-          <span class="projeto-lang">${repo.language || "Front-End"}</span>
+          <span class="projeto-lang">${repo.language || "Full Stack"}</span>
           <div class="projeto-links">
             <a href="${repo.html_url}" target="_blank" title="Ver Código-Fonte no GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
             ${homepageLink}
