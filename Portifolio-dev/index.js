@@ -302,3 +302,6 @@ document.addEventListener("DOMContentLoaded", function () {
       renderProjects(fallbackProjects);
     });
 });
+
+
+
